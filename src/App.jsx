@@ -49,7 +49,7 @@ function App() {
           className="border p-2 mr-2"
           placeholder="Add item"
         />
-        <button onClick={addItem} className="bg-blue-500 text-white p-2">
+        <button onClick={addItem} className="bg-blue-500 rounded text-white p-2">
           Add
         </button>
       </div>
@@ -70,13 +70,13 @@ function App() {
                   />
                   <button
                     onClick={() => updateItem(item.id)}
-                    className="bg-green-500 text-white p-2 mr-2"
+                    className="bg-green-500 rounded text-white p-2 mr-2"
                   >
                     Save
                   </button>
                   <button
                     onClick={cancelEdit}
-                    className="bg-gray-500 text-white p-2"
+                    className="bg-gray-500 rounded text-white p-2"
                   >
                     Cancel
                   </button>
@@ -87,13 +87,13 @@ function App() {
                   <div>
                     <button
                       onClick={() => startEdit(item.id, item.text)}
-                      className="bg-yellow-500 text-white p-2 mr-2"
+                      className="bg-yellow-500 rounded text-white p-2 mr-2"
                     >
                       Edit
                     </button>
                     <button
                       onClick={() => deleteItem(item.id)}
-                      className="bg-red-500 text-white p-2"
+                      className="bg-red-500 rounded text-white p-2"
                     >
                       Delete
                     </button>
